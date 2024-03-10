@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+:root {
+  --bkgColor: hsl(0, 0%, 8%);
+  --sectionBkg: hsl(0, 0%, 12%);
+  --linkBkg: hsl(0, 0%, 20%);
+  --green: hsl(75, 94%, 57%);
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: Inter, "sans-serif";
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bkgColor);
+  color: var(--white);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  flex-direction: column;
+  background-color: var(--sectionBkg);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+div.hero--img {
+  width: 12rem;
+  height: 12rem;
+  margin-bottom: 2rem;
+}
+
+.hero--img img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.hero--name {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.hero--location {
+  font-size: 1.8rem;
+  color: var(--green);
+  font-weight: normal;
+}
+
+h3.hero--title {
+  font-size: 1.5rem;
+  word-spacing: 0.3rem;
+  margin-block: 2rem;
+  font-weight: lighter;
+}
+
+.hero--linkGrp {
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+p.hero--link {
+  width: 30rem;
+  border-radius: 0.5rem;
+  padding-block: 0.7rem;
+  background-color: var(--linkBkg);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+p.hero--link:hover {
+  background-color: var(--green);
+  color: var(--bkgColor);
+}
+
+a {
+  font-size: 1.8rem;
+  color: inherit;
+  text-decoration: none;
+}
